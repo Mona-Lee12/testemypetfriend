@@ -1,6 +1,38 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
 	font-family: "Arial";
 	margin: 0px;
+	font-size: 15px;
+}
+/* Botões */
+#logo .btn-primary, #intro .btn-primary, #main .btn-primary{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+#logo .btn-primary, #intro .btn-primary, #main .btn-primary{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#logo .btn-primary:hover, #intro .btn-primary:hover, #main .btn-primary:hover{
+    background-color: #FFBD4A;
+    color: #000000;
+    box-shadow: 10px;
+}
+#main .btn-primary{
+	text-align: center;
 }
 /* Menu de Navegação */
 #nav-menu{
@@ -43,7 +75,7 @@ body{
 img{
 	padding-top: 50px;
 	width: 350px;
-	height: 70px;
+	height: 120px;
 	margin-bottom: 0px;
 }
 #logo a{
@@ -53,7 +85,7 @@ img{
 	text-decoration: none;
 	font-size: 13pt;
 	color: #FFBD4A;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 #logo a h3{
 	margin: 0px;;
@@ -63,37 +95,42 @@ img{
 	font-size: 1.3em;
 	text-shadow: 1px 2px #000;
 }
-#logo .btn-primary{
-    background-color: #000000; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-#logo .btn-primary{
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-#logo .btn-primary:hover{
-    background-color: #FFBD4A; /* Green */
-    color: #000000;
-    box-shadow: 10px;
-}
-/* Introdução */
+
+/* Introdução e Apresentação */
 #intro{
-	margin-left: 300px;
-	margin-right: 300px;
 	text-align: center;
+	background-color: #F0F0F0;
+
 }
-#intro .intro-title{
+#intro .title{
 	font-size: 30pt;
+	margin-top: 0px;
+	padding-top: 50px;
+	font-weight: bold;
+	color: #FFBD4A;
 }
-#intro .intro-text{
+#intro .text{
 	font-size: 15pt;
+	color: #777;
+	padding-bottom: 50px;
+	margin: 0px;
+	padding-left: 50px; 
+	padding-right: 50px;
+}
+.basic{
+	float: left;
+}
+/* Cadastro */
+#logo h1{
+	text-transform: uppercase;
+	font-size: 25pt;
+	color: #FFBD4A;
+}
+fieldset{
+	width: 50%; 
+	margin: 0px auto;
+}
+#btn-form{ text-align: center; }
+button{
+	text-align: center;
 }
