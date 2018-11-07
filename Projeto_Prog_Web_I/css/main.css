@@ -7,6 +7,7 @@ body{
 	font-family: "Nunito";
 	margin: 0px;
 	font-size: 15px;
+	text-decoration: none;
 }
 /* Botões */
 #logo .btn-primary, #intro .btn-primary, #main .btn-primary{
@@ -21,6 +22,7 @@ body{
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 #logo .btn-primary, #intro .btn-primary, #main .btn-primary{
     -webkit-transition-duration: 0.4s;
@@ -45,7 +47,7 @@ body{
     list-style: none;
 }
 #nav-menu li{ 
-	display: inline; 
+	display: inline;
 	padding: 10px;
 	width: 100%;
 }
@@ -90,9 +92,9 @@ body{
 #logo a h3{
 	margin: 0px;;
 }
-#logo h4{
+#logo p{
 	color: #FFF;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	text-shadow: 1px 2px #000;
 }
 
@@ -120,28 +122,18 @@ body{
 #ident{
 	border: 2px solid #000;
 }
-.basic-1{
-	width: 250px;
-	float: left;
-}
-.basic-2{
-	width: 250px;
-	margin: 0px auto;
-}
-.basic-3{
-	width: 250px;
-	float: right;
-	margin-left: 0px;
-	margin-right: 0px;
-}
 /* Cadastro */
+#main{
+	padding-bottom: 50px;
+}
 #logo h1{
 	text-transform: uppercase;
 	font-size: 25pt;
 	color: #FFBD4A;
 }
-#byline{
-
+#form-primary .byline{
+	text-align: center;
+	font-size: 15pt;
 }
 fieldset{
 	width: 40%; 
@@ -153,5 +145,48 @@ button{
 }
 /* Footer */
 .tweet{
-	background: 
+	position: relative;
+	background: url(../img/pet-2.jpg) no-repeat bottom center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #F0F0F0;
+	background-size:100%;
+	padding: 50px; 
+}
+.tweet p{
+	color: #FFF;
+	font-size: 1.4em;
+	text-shadow: 1px 2px #000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#footer{
+	background-color: #000013;
+	text-align: center;
+	color: #FFF;
+	
+}
+#footer ul{
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#footer li{
+	display: inline;
+	padding: 10px;
+	width: 100%;
+	list-style-type: none;
+}
+#footer .icon{
+	width: 40px;
+	height: 40px;
+}
+#copyright{
+	margin-top: 0%;
+	background-color: #000;
+	padding: 15px;
+}
+#copyright .devs a{
+	color: #777;
+	text-decoration: none;
 }
