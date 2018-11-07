@@ -6,7 +6,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" type="text/css" 	href="css/main.css" >
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
@@ -27,7 +27,7 @@
 			</div>
 			<div id="logo">
 				<a href="index.html">
-					<img src="img/logo.png" alt="" title="" />
+					<img class="inter-logo" src="img/logo.png" alt="" title="" />
 					<h3>Pets Foundation Inc.</h3>
 				</a>
 				<h1>cadastro</h1>
@@ -35,31 +35,32 @@
 		</div>
 		<!-- Formulário -->
 		<div id="main">
-			<form id="form-primary">
-				<section>
+			<section>
+				<form id="form-primary">
 					<header>
 						<h2>Faça seu cadastro</h2>
 						<span class="byline">Inscreva-se</span>
 					</header>
 					<!-- DADOS PESSOAIS-->
 					<fieldset>
-						<legend>Dados Pessoais</legend>
+						<legend>Cadastro</legend>
 						<table cellspacing="20">
+							<h1> Dados Pessoais </h1>
 							<tr>
 								<td>
 									<label for="nome">Nome: </label>
 								</td>
 								<td>
-									<input type="text" name="email">
+									<input type="text" name="nome" placeholder="Escreva o seu nome">
 								</td>
 							<tr>
 								<td>
 									<label>Nascimento: </label>
 								</td>
 								<td>
-									<input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-									<input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-									<input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+									<input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+									<input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+									<input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
 								</td>
 							</tr>
 							<tr>
@@ -67,7 +68,7 @@
 									<label for="rg">RG: </label>
 								</td>
 								<td>
-									<input type="text" name="rg" size="13" maxlength="13"> 
+									<input type="text" name="rg" size="13" maxlength="13" placeholder="xxxxxxxxx "> 
 									</td>
 							</tr>
 							<tr>
@@ -75,28 +76,25 @@
 								    <label>CPF: </label>
 								</td>
 								<td>
-									<input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+									<input type="text" name="cpf" size="9" maxlength="9" placeholder="xxxxxxxxx"> - <input type="text" name="cpf2" size="2" maxlength="2" placeholder="xx ">
 								</td>
 							</tr>
 						</table>
-					</fieldset>
-					<br>
-					<!-- ENDEREÇO -->
-					<fieldset>
-					<legend>Dados de Endereço</legend>
+						<!-- ENDEREÇO -->
+						<h1>Endereço</h1>					
 						<table cellspacing="10">
 							<tr>
 								<td>
 							    	<label for="rua">Rua: </label>
 								</td>
 								<td>
-								    <input type="text" name="rua">
+								    <input type="text" name="rua" placeholder="ex:Rua Jardim Maravilha">
 								</td>
 								<td>
 								    <label for="numero">Numero: </label>
 								</td>
 								<td>
-									<input type="text" name="numero" size="4">
+									<input type="text" name="numero" size="4" placeholder="ex:000">
 								</td>
 							</tr>
 							<tr>
@@ -104,7 +102,7 @@
 									<label for="bairro">Bairro: </label>
 								</td>
 								<td>
-									<input type="text" name="bairro">
+									<input type="text" name="bairro" placeholder="ex:Santa Cruz">
 								</td>
 							</tr>
 							<tr>
@@ -113,6 +111,7 @@
 								</td>
 								<td>
 								    <select name="estado"> 
+								    	<option value="sl">selecionar</option>
 								    	<option value="ac">Acre</option> 
 								    	<option value="al">Alagoas</option> 
 								    	<option value="am">Amazonas</option> 
@@ -148,7 +147,7 @@
 								    <label for="cidade">Cidade: </label>
 								</td>
 								<td>
-								    <input type="text" name="cidade">
+								    <input type="text" name="cidade" placeholder="São Paulo">
 								</td>
 							</tr>
 							<tr>
@@ -156,70 +155,66 @@
 								    <label for="cep">CEP: </label>
 								</td>
 								<td>
-								    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+								    <input type="text" name="cep" size="5" maxlength="5" placeholder="xxxxx"> - <input type="text" name="cep2" size="3" maxlength="3" placeholder="xxx">
 								</td>
 							</tr>
 						</table>
-						</fieldset>
-						<br>
 						<!-- DADOS DE LOGIN -->
-						<fieldset>
-							<legend>Dados de login</legend>
-								<table cellspacing="10">
-									<tr>
-										<td>
-											<label for="email">E-mail: </label>
-										</td>
-										<td>
-											<input type="text" name="email">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="imagem">Imagem de perfil: </label>
-										</td>
-										<td>
-											<input type="file" name="imagem" >
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="login">Login de usuário: </label>
-										</td>
-										<td>
-											<input type="text" name="login">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="pass">Senha: </label>
-										</td>
-										<td>
-											<input type="password" name="pass">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="passconfirm">Confirme a senha: </label>
-										</td>
-										<td>
-											<input type="password" name="passconfirm">
-										</td>
-									</tr>
-								</table>
-							</fieldset>
-							<br>
+						<h1>Informações de acesso</h1>
+						<table cellspacing="10">
+							<tr>
+								<td>
+									<label for="email">E-mail: </label>
+								</td>
+								<td>
+									<input type="text" name="email" placeholder="email@email.com.br">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="imagem">Imagem de perfil: </label>
+								</td>
+								<td>
+									<input type="file" name="imagem" >
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="login">Login de usuário: </label>
+								</td>
+								<td>
+									<input type="text" name="login" placeholder="nickname">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="pass">Senha: </label>
+								</td>
+								<td>
+									<input type="password" name="pass" placeholder="********">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="passconfirm">Confirme a senha: </label>
+								</td>
+								<td>
+									<input type="password" name="passconfirm" placeholder="********">
+								</td>
+							</tr>
+						</table>
+						<br>
 							<div id="btn-form">
 								<button>ENVIAR</button>
 								<button>LIMPAR</button>
 							</div>
 						</table>
 					</fieldset>
-				</form>
-			</section>
+				</section>
+			</form>
 		</div>
 		<!-- Frase de efeito-->
-		<div id="tweet">
+		<div class="tweet">
 			<section>
 				<p>"Adotar um animal é escolher ser um anjo. Os anjos protegem seus escolhidos e em troca recebem o que cada animal tem de mais precioso: Seu coração transbordando AMOR e GRATIDÃO e isso torna a vida especial !!!"
 				</p>
@@ -228,7 +223,7 @@
 
 		<!-- Redes Sociais -->
 		<div id="footer">
-			<div class="container">
+			<div>
 				<section>
 					<header>
 						<h2>Entre em Contato</h2>
@@ -245,7 +240,7 @@
 		</div>
 		<!-- Desenvolvedores WM - Willian e Mona-Lee -->
 		<div id="copyright">
-			<div class="container">
+			<div>
 				Design: <a href="http://www.wmdesenvolvedores.com.br">WM_Desenvolvedores</a> Imagens:<a href="http://google.com.br">Google</a>
 			</div>
 		</div>

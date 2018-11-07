@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-	font-family: "Arial";
+	font-family: "Nunito";
 	margin: 0px;
 	font-size: 15px;
 }
@@ -72,7 +72,7 @@ body{
 	background-size: cover;
 	text-align: center;
 }
-img{
+.inter-logo{
 	padding-top: 50px;
 	width: 350px;
 	height: 120px;
@@ -117,8 +117,22 @@ img{
 	padding-left: 50px; 
 	padding-right: 50px;
 }
-.basic{
+#ident{
+	border: 2px solid #000;
+}
+.basic-1{
+	width: 250px;
 	float: left;
+}
+.basic-2{
+	width: 250px;
+	margin: 0px auto;
+}
+.basic-3{
+	width: 250px;
+	float: right;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 /* Cadastro */
 #logo h1{
@@ -126,11 +140,18 @@ img{
 	font-size: 25pt;
 	color: #FFBD4A;
 }
+#byline{
+
+}
 fieldset{
-	width: 50%; 
+	width: 40%; 
 	margin: 0px auto;
 }
 #btn-form{ text-align: center; }
 button{
 	text-align: center;
+}
+/* Footer */
+.tweet{
+	background: 
 }
