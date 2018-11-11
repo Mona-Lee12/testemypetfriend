@@ -6,7 +6,9 @@
 		<title> My Pet Friend </title>
 		<meta name="author" content="Mona-lee Antunes e Willian Pereira">
 		<script src="js/main.js"></script>
+		<script src="js/galeria.js"></script>
 		<link rel="stylesheet" type="text/css" 	href="css/main.css" >
+		<link rel="stylesheet" type="text/css" 	href="css/galeria.css" >
     	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     	<link rel="icon" href="img/icon.png">
 	</head>
@@ -17,117 +19,70 @@
 				<!-- Menu -->
 				<nav id="nav-menu">
 					<ul>
-						<li><a href="index.html">Página Inicial</a></li>
-			        	<li><a href="cadastro.html">Cadastro</a></li>
-			        	<li><a href="sobrenos.html">Sobre Nós</a></li>
-			        	<li><a href="pets.html">Pets</a></li>  
+						<li><a href="index.html">página inicial</a></li>
+			        	<li><a href="login.html">login</a></li>
+			        	<li><a href="cadastro.html">cadastro</a></li>
+			        	<li><a href="sobrenos.html">sobre nós</a></li>
+			        	<li><a href="pets.html">pets</a></li>
 					</ul>
 				</nav>
 			</div>
 				<!-- Logo -->
-				<!-- Logo -->
-				<div id="logo">
-					<a href="index.html">
-						<img  class="inter-logo" src="img/logo.png" alt="" title="" />
-						<h3>Pets Foundation Inc.</h3>
-					</a>
-					<h1>Pets</h1>	
-				</div>
-<!--Foto e descrição dos animais -->
-<!--Foto 1 -->
-		<div id="intro">
-			<div class="text">
-						<section>
-							<header>
-								<h2>Little Pets</h2>
-								<span class="byline">Filhotes</span>
-							</header>
-			<section id="intro" class="text">
-				<div>
-					<div>
-						<div>
-							<div>
-								<div>
-									<img src="images/labrador.jpg" alt="" />
-								</div>
-								<div>
-									<header>
-										<p>Labrador</p>
-										<h2>4 meses - Macho</h2>
-									</header>
-									<p> Muito docil === descrevere sobre o  labrador</p>
-									<footer>
-										<a href="#" class="button alt">Saiba Mais</a>
-									</footer>
-								</div>
-								<!--Foto2 -->
-						<div>
-							<div>
-								<div>
-									<img src="images/tartaruga.jpg" alt="" />
-								</div>
-								<div>
-									<header>
-										<p>Jabuti</p>
-										<h2>1 mês - Fêmea</h2>
-									</header>
-									<p> Mini jabuti --- aqui colocar a descricao da tartaruga</p>
-									<footer>
-										<a href="#" class="button alt">Saiba Mais</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-						</section>
-					</div>
-
-					<!-- Menu de escolha dos Animais-->
-					<div id="intro" class ="text">
-						<section>
-							<header>
-								<h2>ESCOLHA SEU ANIMAL</h2>
-							</header>
-							<div>
-								<section>
-									<ul>
-										<li><a href="#">Cachorro</a></li>
-										<li><a href="#">Gatos</a></li>
-										<li><a href="#">Coelhos</a></li>
-										<li><a href="#">Tartarugas</a></li>
-										<li><a href="#">Ramisters</a></li>
-										<li><a href="#">Passaros</a></li>
-									</ul>
-								</section>
-							</div>
-						</section>
-						<section>
-							<header>
-								<h2>Sheila Araujo</h2>
-							</header>
-							<ul>
-								<li>
-									<p>23 de Abril, 2014  |  (10)  Comentários</p>
-									<p><a>spike bulldog</a></p>
-								</li>
-								<li>
-									<header>
-										<h2>Mel Moreira</h2>
-									</header>
-									<p>15 de agosto, 2017  |  (7) Comentários</p>
-									<p><a href="#">5 gatos </a></p>
-								</li>
-							</ul>
-						</section>
-					</div>
-					
-				</div>
+			<div id="logo">
+				<a href="index.html">
+					<img  class="inter-logo" src="img/logo.png" alt="" title="" />
+					<h3>Pets Foundation Inc.</h3>
+				</a>
+				<h1>Pets</h1>	
 			</div>
 		</div>
-	<		<!-- Redes Sociais -->
+		<!--Foto e descrição dos animais -->
+		<!--Foto 1 -->	
+		<div id="gallery">
+			<header>
+				<center class="text-glr"><h1 >Veja nossos animalzinhos</h1></center>
+			</header>
+
+			<section class="container gallery-container">
+				
+            	<!--Slide-->
+            	<div class="mySlides fade" style="display: block;"> <!-- 01 -->
+            	    <div class="numbertext">01 / 05</div>
+            	    <img class="imgslide" src="img/coelho.jpg">
+                	<div class="text">Coelho - Filhote - Fêmea - 7 meses</div>
+            	</div>
+
+            	<div class="mySlides fade" style="display: none;"> <!-- 02 -->
+            	    <div class="numbertext">02 / 05</div>
+                	<img class="imgslide" src="img/cão.jpg">
+            	    <div class="text">Cão - Adulto - Macho - 1 ano e 3 meses</div>
+            	</div>
+
+            	<div class="mySlides fade" style="display: none;"> <!-- 03 -->
+            	    <div class="numbertext">03 / 05</div>
+            	    <img class="imgslide" src="img/tartaruga.jpg">
+            	    <div class="text">Tartaruga - Filhote - Macho - 4 meses</div>
+            	</div>
+
+            	<div class="mySlides fade" style="display: none;"> <!-- 04 -->
+            	    <div class="numbertext">04 / 05</div>
+            	    <img class="imgslide" src="img/gato.jpg">
+            	    <div class="text">Gato - Adulto - Fêmea - Aproximadamente 2 anos</div>
+            	</div>
+
+            	<div class="mySlides fade" style="display: none;"> <!-- 05 -->
+            	    <div class="numbertext">05 / 05</div>
+                	<img class="imgslide" src="img/passaro.jpg">
+            	    <div class="text">Passaro - Filhote macho - 5 meses</div>
+            	</div>
+           		<!--Final Slides-->
+
+        	    <!--Navigation-->
+        	    <a class="prev" onclick="plusSlides(-1)">❮</a>
+        	    <a class="next" onclick="plusSlides(1)">❯</a>
+        	</section>
+    	</div>
+		<!-- Redes Sociais -->
 		<div id="footer">
 			<!-- Frase de efeito-->
 			<div class="tweet">

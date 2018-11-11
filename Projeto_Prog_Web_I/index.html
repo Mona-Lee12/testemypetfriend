@@ -6,7 +6,9 @@
 		<title> My Pet Friend </title>
 		<meta name="author" content="Mona-lee Antunes e Willian Pereira">
 		<script src="js/main.js"></script>
+		<script src="js/galeria.js"></script>
 		<link rel="stylesheet" type="text/css" 	href="css/main.css" >
+		<link rel="stylesheet" type="text/css" 	href="css/galeria.css" >
     	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     	<link rel="icon" href="img/icon.png">
 	</head>
@@ -17,9 +19,10 @@
 				<nav id="nav-menu">
 					<ul>
 						<li><a href="index.html">página inicial</a></li>
+			        	<li><a href="login.html">login</a></li>
 			        	<li><a href="cadastro.html">cadastro</a></li>
 			        	<li><a href="sobrenos.html">sobre nós</a></li>
-			        	<li><a href="pets.html">pets</a></li>  
+			        	<li><a href="pets.html">pets</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -51,7 +54,38 @@
 			<a href="#" class="btn-primary"> adotar </a>
 			<a href="#" class="btn-primary"> doar </a>
 		</div>
-	
+		<div id="gallery">
+			<header>
+				<center class="text-glr"><h2>Fique de Olho</h2></center>
+			</header>
+			<section class="gallery-container">
+
+            	<!--Slide-->
+            	<div class="mySlides fade" style="display: block;"> <!-- 01 -->
+            	    <div class="numbertext">01 / 03</div>
+            	    <img class="imgslide" src="img/grep.jpg" alt="Arara Azul">
+                	<div class="text">Olha os gatinhos fazendo a diferença</div>
+            	</div>
+
+            	<div class="mySlides fade" style="display: none;"> <!-- 02 -->
+            	    <div class="numbertext">02 / 03</div>
+                	<img class="imgslide" src="img/crep.jpg" alt="Arara Canindé">
+            	    <div class="text">Os cachorrinhos também divertem e mostrar que adotar é a melhor escolha</div>
+            	</div>
+
+            	<div class="mySlides fade" style="display: none;"> <!-- 03 -->
+            	    <div class="numbertext">03 / 03</div>
+            	    <img class="imgslide" src="img/crep2.jpg" alt="Papagaio Verdadeiro">
+            	    <div class="text">Não é só um animal é membro da sua familia</div>
+            	</div>
+
+           		<!--Final Slides-->
+
+        	    <!--Navigation-->
+        	    <a class="prev" onclick="plusSlides(-1)">❮</a>
+        	    <a class="next" onclick="plusSlides(1)">❯</a>
+        	</section>
+    	</div>
 		<!-- Redes Sociais -->
 		<div id="footer">
 			<div class="tweet">

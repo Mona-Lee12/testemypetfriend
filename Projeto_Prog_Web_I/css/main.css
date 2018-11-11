@@ -7,7 +7,8 @@ body{
 	font-family: "Nunito";
 	margin: 0px;
 	font-size: 15px;
-	text-decoration: none; 
+	text-decoration: none;
+	color: #777;
 }
 /* Botões */
 #logo .btn-primary, #intro .btn-primary, #main .btn-primary{
@@ -119,6 +120,14 @@ body{
 	padding-left: 50px; 
 	padding-right: 50px;
 }
+#intro .nos{
+	font-size: 18pt;
+	color: #777;
+	padding-bottom: 50px;
+	margin: 0px;
+	padding-left: 100px; 
+	padding-right: 100px;
+}
 #ident{
 	border: 2px solid #000;
 }
@@ -135,6 +144,14 @@ body{
 	text-align: center;
 	font-size: 15pt;
 }
+#login{
+	padding: 100px;
+}
+.borda{
+	border-radius: 3px;
+	border: 1px solid #777;
+	padding: 5px;
+}
 fieldset{
 	width: 40%; 
 	margin: 0px auto;
@@ -142,6 +159,17 @@ fieldset{
 #btn-form{ text-align: center; }
 button{
 	text-align: center;
+}
+/* Login */
+#login{
+	text-align: center;
+}
+
+.borda-login{
+	border-radius: 3px;
+	border: 1px solid grey;
+	width: 150px;
+	padding: 5px;
 }
 /* Footer */
 .tweet{
