@@ -21,12 +21,12 @@
       }
   }
 
-/* Hide the images by default */
+/* Mostrar a imagem padrão */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Next e previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -42,18 +42,18 @@
   background-color: rgba(0,0,0,0.1);
 }
 
-/* Position the "next button" to the right */
+/* Posicionar o "next button" a dirieita */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Mudar a cor do background do botão */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,1);
 }
 
-/* Caption text */
+/* Texto */
 .text {
   color: #FFBD4A;
   font-size: 22px;
@@ -66,7 +66,7 @@
   width: 100%;
 }
 
-/* Number text (1/3 etc) */
+/* quantidade de imagens */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;

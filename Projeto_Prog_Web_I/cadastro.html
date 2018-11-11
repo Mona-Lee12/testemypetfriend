@@ -50,16 +50,16 @@
 									<label for="nome">Nome: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="nome" placeholder="Escreva o seu nome">
+									<input class="borda" id="name" type="text" name="nome" placeholder="Escreva o seu nome">
 								</td>
 							<tr>
 								<td>
 									<label>Nascimento: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
-									<input class="borda" type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
-									<input class="borda" type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+									<input class="borda" id="dia" type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+									<input class="borda" id="mes" type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+									<input class="borda" id="ano" type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
 								</td>
 							</tr>
 							<tr>
@@ -67,7 +67,7 @@
 									<label for="rg">RG: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="rg" size="13" maxlength="13" placeholder="xxxxxxxxx "> 
+									<input class="borda" id="reg" type="text" name="rg" size="13" maxlength="13" placeholder="xxxxxxxxx "> 
 									</td>
 							</tr>
 							<tr>
@@ -75,7 +75,7 @@
 								    <label>CPF: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="cpf" size="9" maxlength="9" placeholder="xxxxxxxxx"> - <input class="borda" type="text" name="cpf2" size="2" maxlength="2" placeholder="xx ">
+									<input class="borda" id="cpf" type="text" name="cpf" size="9" maxlength="9" placeholder="xxxxxxxxx"> - <input class="borda" type="text" name="cpf2" size="2" maxlength="2" placeholder="xx ">
 								</td>
 							</tr>
 						</table>
@@ -87,13 +87,13 @@
 							    	<label for="rua">Rua: </label>
 								</td>
 								<td>
-								    <input class="borda" type="text" name="rua" placeholder="ex:Rua Jardim Maravilha">
+								    <input class="borda" id="rua" type="text" name="rua" placeholder="ex:Rua Jardim Maravilha">
 								</td>
 								<td>
 								    <label for="numero">Numero: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="numero" size="4" placeholder="ex:000">
+									<input class="borda" id="numero" type="text" name="numero" size="4" placeholder="ex:000">
 								</td>
 							</tr>
 							<tr>
@@ -101,7 +101,7 @@
 									<label for="bairro">Bairro: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="bairro" placeholder="ex:Santa Cruz">
+									<input class="borda" id="bairro" type="text" name="bairro" placeholder="ex:Santa Cruz">
 								</td>
 							</tr>
 							<tr>
@@ -109,7 +109,7 @@
 								    <label for="estado">Estado: </label>
 								</td>
 								<td>
-								    <select name="estado"> 
+								    <select name="estado" id="estado"> 
 								    	<option value="sl">selecionar</option>
 								    	<option value="ac">Acre</option> 
 								    	<option value="al">Alagoas</option> 
@@ -146,7 +146,7 @@
 								    <label for="cidade">Cidade: </label>
 								</td>
 								<td>
-								    <input class="borda" type="text" name="cidade" placeholder="São Paulo">
+								    <input class="borda" id="cidae" type="text" name="cidade" placeholder="São Paulo">
 								</td>
 							</tr>
 							<tr>
@@ -154,7 +154,7 @@
 								    <label for="cep">CEP: </label>
 								</td>
 								<td>
-								    <input class="borda" type="text" name="cep" size="5" maxlength="5" placeholder="xxxxx"> - <input class="borda" type="text" name="cep2" size="3" maxlength="3" placeholder="xxx">
+								    <input class="borda" id="cep" type="text" name="cep" size="5" maxlength="5" placeholder="xxxxx"> - <input class="borda" type="text" name="cep2" size="3" maxlength="3" placeholder="xxx">
 								</td>
 							</tr>
 						</table>
@@ -163,10 +163,10 @@
 						<table cellspacing="10">
 							<tr>
 								<td>
-									<label for="email">E-mail: </label>
+									<label for="email" >E-mail: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="email" placeholder="email@email.com.br">
+									<input class="borda" id="email" type="text" name="email" placeholder="email@email.com.br">
 								</td>
 							</tr>
 							<tr>
@@ -174,7 +174,7 @@
 									<label for="imagem">Imagem de perfil: </label>
 								</td>
 								<td>
-									<input type="file" name="imagem" >
+									<input type="file" id="image" name="imagem" >
 								</td>
 							</tr>
 							<tr>
@@ -182,7 +182,7 @@
 									<label for="login">Login de usuário: </label>
 								</td>
 								<td>
-									<input class="borda" type="text" name="login" placeholder="nickname">
+									<input class="borda" id="usuario" type="text" name="login" placeholder="nickname">
 								</td>
 							</tr>
 							<tr>
@@ -190,7 +190,7 @@
 									<label for="pass">Senha: </label>
 								</td>
 								<td>
-									<input class="borda" type="password" name="pass" placeholder="********">
+									<input class="borda" id="senha" type="password" name="pass" placeholder="********">
 								</td>
 							</tr>
 							<tr>
@@ -198,13 +198,13 @@
 									<label for="passconfirm">Confirme a senha: </label>
 								</td>
 								<td>
-									<input class="borda" type="password" name="passconfirm" placeholder="********">
+									<input class="borda" id="senhaConfirm" type="password" name="passconfirm" placeholder="********">
 								</td>
 							</tr>
 						</table>
 						<br>
 							<div id="btn-form">
-								<input type="submit">
+								<input type="submit" onclick="registrar(this)">
 								<input type="reset" value="Limpar">
 							</div>
 						</table>

@@ -39,14 +39,14 @@
 			<form>
 				<fieldset>
 					<label for="login">Login:</label><br>
-					<input class="borda-login" type="text" name="login" placeholder="nickname ou e-mail">
+					<input class="borda-login" id="userLog" type="text" name="login" placeholder="nickname ou e-mail">
 					<br><br>
 					<label for="senha">Senha:</label><br>
-					<input class="borda-login" type="text" name="password" placeholder="Escreva o seu nome">
+					<input class="borda-login" id="userPass" type="password" name="password" placeholder="Escreva o seu nome">
 					<br>
 					<a href="#">Esqueci minha senha</a>
 					<br><br>
- 					<input type="submit" value="Entrar">
+ 					<input type="submit" value="Entrar" onclick="logar(this)">
 					<p>Não possui um usuário?<a href="cadastro.html">Cadastre-se agora</a></p>
 				</fieldset>
 			</form>

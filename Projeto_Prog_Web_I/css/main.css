@@ -11,7 +11,7 @@ body{
 	color: #777;
 }
 /* Botões */
-#logo .btn-primary, #intro .btn-primary, #main .btn-primary{
+#logo .btn-primary, #intro .btn-primary, #main .btn-primary, #gallery .btn-primary{
     background-color: #000000;
     border: none;
     color: white;
@@ -25,17 +25,20 @@ body{
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-#logo .btn-primary, #intro .btn-primary, #main .btn-primary{
+#logo .btn-primary, #intro .btn-primary, #main .btn-primary, #gallery .btn-primary{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
-#logo .btn-primary:hover, #intro .btn-primary:hover, #main .btn-primary:hover{
+#logo .btn-primary:hover, #intro .btn-primary:hover, #main .btn-primary:hover, #gallery .btn-primary:hover{
     background-color: #FFBD4A;
     color: #000000;
     box-shadow: 10px;
 }
-#main .btn-primary{
+#main .btn-primary, #gallery .btn-primary{
 	text-align: center;
+}
+#gallery .btn-primary{
+	margin-top: 50px
 }
 /* Menu de Navegação */
 #nav-menu{
@@ -121,6 +124,7 @@ body{
 	padding-right: 50px;
 }
 #intro .nos{
+	padding-top: 30px;
 	font-size: 18pt;
 	color: #777;
 	padding-bottom: 50px;
