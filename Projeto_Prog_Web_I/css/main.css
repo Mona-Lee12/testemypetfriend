@@ -222,3 +222,13 @@ button{
 	color: #777;
 	text-decoration: none;
 }
+/* Doação */
+#donate-page{
+	text-align: center;
+	border: 1px solid #777;
+	margin: 40px;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
