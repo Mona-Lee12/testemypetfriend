@@ -36,11 +36,22 @@
 
 		<!-- Login -->
 		<div id="donate-page">
-			<label for="pass">Foto: </label><br>
-				<input id="foto" type="file" name="foto"><br><br>
-			<label for="decricao">Descrição: </label><br>
-				<textarea id="desc" placeholder="Escreva a sua mensagem" rows="10" cols="40"></textarea><br><br>
-			<input type="submit"/>
+			<form>
+				<fieldset><br><br>
+					<label for="pass">Foto: </label><br>
+						<input id="foto" type="file" name="foto"><br><br>
+					<label for="faixaEtaria">Faixa Etária:<br></label>
+						<input type="text" id="faixaEtaria" name="faixaEtaria" placeholder="ex.: Adulto" /><br><br>
+					Sexo:<br>
+						<input type="radio" id="femin"  name="gender" value="Feminino" /><label for="sexf">Feminino</label>
+						<input type="radio" id="masc"  name="gender" value="Masculino" /><label for="sexm">Masculino</label><br><br>
+					<label for="age">Idade: </label><br>
+						<input id="idade" type="text" name="anos" placeholder="05 meses" /><br><br>
+					<label for="decricao">Descrição: </label><br>
+						<textarea id="desc" placeholder="Escreva a sua mensagem" rows="10" cols="40"></textarea><br><br>
+					<input type="submit" onclick="doar(this)" /><br><br>
+				</fieldset>
+		</form>
 		</div>
 		<!-- Redes Sociais -->
 		<div id="footer">
